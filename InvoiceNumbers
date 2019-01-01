@@ -30,9 +30,11 @@ public class InvoiceNumbers{
         int pipe2 = 0;
         
         for (int i = 0; i < vect.size(); i++) {
-            pipe1 = InvoiceNumbers.ordinalIndexOf(vect.get(i), "|", 2) + 1;
-            pipe2 = InvoiceNumbers.ordinalIndexOf(vect.get(i), "|", 3);
+            pipe1 = InvoiceNumbers.ordinalIndexOf(vect.get(i), "|", 1) + 1;
+            pipe2 = InvoiceNumbers.ordinalIndexOf(vect.get(i), "|", 2);
+            System.out.print("'");
             System.out.print(vect.get(i).substring(pipe1, pipe2));
+            System.out.print("'");
             if (i < vect.size() - 1) {
                 System.out.println(",");
             }
