@@ -11,7 +11,7 @@ public class FormatArtworkURLSoundcloud{
         Character ch = '"';
         String q = ch.toString();
         Scanner scan = new Scanner(System.in);
-        System.out.println(scan.nextLine()
+        System.out.print(scan.nextLine()
             .replace("style="
             .concat(q)
             .concat("background-image: url(\\")
