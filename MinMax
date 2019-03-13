@@ -1,0 +1,33 @@
+import java.util.*;
+
+/*
+    Return max and min timestamps from a list
+*/
+
+public class MinMax{
+
+    public static void main(String []args){
+        // IO
+        Vector<String> vect = new Vector<String>(); 
+        Scanner scan = new Scanner(System.in);
+        
+        while (scan.hasNextLine()) {
+            vect.add(scan.nextLine());
+        }
+        scan.close();
+        
+        // Logic
+        String min = "2019/03/06 18:58:28";
+        String max = "0";
+        
+		for (int i = 0; i < vect.size(); i++) {
+			if (vect.get(i).compareTo(min) < 0) {
+			    min = vect.get(i);
+			}
+			if (vect.get(i).compareTo(max) > 0) {
+			    max = vect.get(i);
+			}
+		}
+		
+        System.out.println("Min:  " + min);
+		System.out.println
