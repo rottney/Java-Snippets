@@ -10,16 +10,16 @@ public class MinMax{
         // IO
         Vector<String> vect = new Vector<String>(); 
         Scanner scan = new Scanner(System.in);
-        
+
         while (scan.hasNextLine()) {
             vect.add(scan.nextLine());
         }
         scan.close();
-        
+
         // Logic
         String min = "~";
         String max = "0";
-        
+
 		for (int i = 0; i < vect.size(); i++) {
 			if (vect.get(i).compareTo(min) < 0) {
 			    min = vect.get(i);
@@ -28,7 +28,8 @@ public class MinMax{
 			    max = vect.get(i);
 			}
 		}
-		
-        System.out.println("Min:  " + min);
+
+	System.out.println("Min:  " + min);
 	System.out.println("Max:  " + max);
+    }
 }
