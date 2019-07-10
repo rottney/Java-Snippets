@@ -38,8 +38,7 @@ public class FormatFeed {
         // Logic
         int numCols = CountOccurrences(vect.get(0), delim);
         int numRows = vect.size() - 1;    // don't count header as row
-        String headStr = vect.get(0);
-        String[] head = headStr.split(token);
+        String[] head = vect.get(0).split(token);
         
         for (int i = 0; i < numRows; i++) {
             System.out.println("Record " + (i + 1) + ": {");
