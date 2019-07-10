@@ -3,7 +3,10 @@ import java.lang.Object.*;
 
 /*
     Formats a data feed to mimic JSON for readibility
-    Version 0.0.1:  assumes well-formatted input
+    Version 0.0.1:  assumes well-formatted input *
+        * a.k.a. no newline characters at end lol
+        * all records (incl. header) must have same # of cols
+        * BUG:  breaks if last column of any record is empty str
 */
 
 public class FormatFeed {
@@ -43,7 +46,7 @@ public class FormatFeed {
         for (int i = 0; i < numRows; i++) {
             System.out.println("Record " + (i + 1) + ": {");
             for (int j = 0; j < numCols; j++) {
-                System.out.print("\t" + head[i] + ":  ");
+                System.out.print("\t" + head[j] + ":  ");
                 System.out.println(vect.get(i + 1).split(token)[j]);
             }
             System.out.println("}\n");
