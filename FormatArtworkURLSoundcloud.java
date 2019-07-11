@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 /*
     Input:  Copy Attribute from SoundCloud image
@@ -18,7 +18,7 @@ public class FormatArtworkURLSoundcloud{
             .concat(q), "")
             .replace("\\"
             .concat(q)
-            .concat("); width: 500px; height: 500px; opacity: 1;")
+            .concat("); width: 100%; height: 100%; opacity: 1;")
             .concat(q), ""));
             scan.close();
     }
