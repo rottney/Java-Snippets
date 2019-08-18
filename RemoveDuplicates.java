@@ -1,6 +1,11 @@
 import java.util.*;
 
 /*
+    THERE IS A BUG WHERE IT DOESN'T READ THE FIRST LINE
+    Also, I can probably do this in better than O(n^2) lol
+*/
+
+/*
     Removes duplicate strings from input
 */
 
